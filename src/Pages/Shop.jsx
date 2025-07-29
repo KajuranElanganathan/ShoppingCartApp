@@ -26,20 +26,20 @@ function Shop(){
 
             <h1>Shop page</h1>
 
-            <p>
+            
 
 
                 {loading ? "Loading..." : (prods.map((prods) => ( 
-                    <div className="gird">
+                    <div className="grid">
                     
-                    <ProductCard key = {prods.card} prods = {prods}></ProductCard>
+                    <ProductCard key = {prods.id} prods = {prods}></ProductCard>
 
                     </div>
                     
                     
                 )))}
 
-            </p>
+            
 
         </div>
 
