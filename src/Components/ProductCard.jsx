@@ -8,11 +8,14 @@ const {addToCart} = useCart();
 
 
 
+
+
+
 return(
 
     <div className ="Product Card">
         <h3>{prods.title}</h3>
-        <p>{prods.price}</p>
+        <p>Price: ${prods.price}</p>
         <img 
         src={prods.image} 
         alt="img" 
@@ -25,7 +28,6 @@ return(
 
         <div>
             <button className="btn" onClick={()=>addToCart(prods)}>Add to Cart</button>
-            <button className="btn">View Details</button>
         </div>
         
     </div>
@@ -33,8 +35,6 @@ return(
 
 
 )
-
-
 
 
 }
