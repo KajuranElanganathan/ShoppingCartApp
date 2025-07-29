@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react"
 import ProductCard from "../Components/ProductCard";
-
+import "./Shop.css";
 function Shop(){
 
 
@@ -20,37 +20,23 @@ function Shop(){
         )},[]);
 
 
-    return(
-
-        <div>
-
-            <h1>Shop page</h1>
-
-            
-
-
-                {loading ? "Loading..." : (prods.map((prods) => ( 
-                    <div className="grid">
-                    
-                    <ProductCard key = {prods.id} prods = {prods}></ProductCard>
-
-                    </div>
-                    
-                    
-                )))}
-
-            
-
+    return (
+    <div className="ShopContainer">
+      <h1>Shop page</h1>
+      {loading ? (
+        "Loading..."
+      ) : (
+        <div className="grid">
+          {prods.map((prods) => (
+            <ProductCard key={prods.id} prods={prods} />
+          ))}
         </div>
-
-
-    )
-
-
-
-
-
-
+      )}
+    </div>
+  );
 }
+
+
+
 
 export default Shop;

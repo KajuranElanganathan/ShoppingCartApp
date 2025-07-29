@@ -1,4 +1,5 @@
 import { useCart } from "../CartContext.jsx";
+import "./ProductCard.css";
 
 
 function ProductCard({prods}){
@@ -7,13 +8,9 @@ function ProductCard({prods}){
 const {addToCart} = useCart();
 
 
-
-
-
-
 return(
 
-    <div className ="Product Card">
+    <div className ="ProductCard">
         <h3>{prods.title}</h3>
         <p>Price: ${prods.price}</p>
         <img 

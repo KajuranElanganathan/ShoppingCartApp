@@ -1,0 +1,19 @@
+.ShopContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.ShopContainer h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}

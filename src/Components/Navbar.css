@@ -1,6 +1,5 @@
-/* Reset and global nav styles */
 nav {
-  width: 100vw; /* Full viewport width */
+  width: 100vw; 
   background-color: black;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -11,7 +10,6 @@ nav {
   padding: 0;
 }
 
-/* Flex layout for nav items */
 nav ul {
   list-style: none;
   margin: 0;
@@ -22,7 +20,6 @@ nav ul {
   height: 60px;
 }
 
-/* Styling for individual nav links */
 nav li {
   margin: 0 1rem;
 }
@@ -39,7 +36,7 @@ nav a:hover {
   color: #007bff;
 }
 
-/* Cart badge style */
+
 .cart-count {
   background-color: #ff3b30;
   color: white;
@@ -51,7 +48,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
